@@ -1,0 +1,2 @@
+#Get count of unique occurences in a range
+=LAMBDA(range, COUNTA(UNIQUE(range)))
