@@ -1,2 +1,5 @@
 #Get count of unique occurences in a range
 =LAMBDA(range, COUNTA(UNIQUE(range)))
+
+#Find a value in a table (https://corporatefinanceinstitute.com/resources/excel/study/index-match-formula-excel/)
+=LAMBDA(table,value_vertical,array_vertical,value_horizontal,array_horizontal, INDEX(table, MATCH(value_vertical,array_vertical,0),MATCH(value_horizontal, array_horizontal,0)))
