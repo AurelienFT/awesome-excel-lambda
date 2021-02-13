@@ -1,0 +1,10 @@
+#Find perimeter rectangle
+=LAMBDA(length,width, 2*(length+width))
+
+#Find area of a rectangle
+=LAMBDA(width,length, width * length)
+
+#Find diagonal length of a reactangle
+=LAMBDA(length,width, SQRT((length*length) + (width*width)))
+=LAMBDA(side,area, SQRT((area*area) / (side*side) + (side*side)))
+=LAMBDA(side,perimeter, SQRT(2*(side*side) - perimeter*side + (perimeter*perimeter)/4))
