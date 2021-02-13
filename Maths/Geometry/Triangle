@@ -1,0 +1,8 @@
+#Find hypotenuse
+=LAMBDA(a, b, SQRT((a^2+b^2)))
+
+#Area of triangle
+=LAMBDA(base,height, (height * base) / 2)(40,23)
+
+#Find if a triangle is a right triangle
+=LAMBDA(side1,side2,hypotenuse, IF((side1 * side1) + (side2 * side2) = (hypotenuse * hypotenuse), TRUE(), FALSE()))
