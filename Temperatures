@@ -1,5 +1,17 @@
 # Convert Celsius to Farenheit
 =LAMBDA(temp, temp * 9/5 + 32)
 
+# Convert Celsius to Kelvin
+=LAMBDA(temp, temp + 273.15)
+
 # Convert Farenheit to Celsius
 =LAMBDA(temp, (5/9) * (temp-32))
+
+# Convert Farenheit to Kelvin
+=LAMBDA(temp, (temp - 32) * 5/9 + 273.15)
+
+# Convert Kelvin to Celsius
+=LAMBDA(temp, temp - 273.15)
+
+# Convert Kelvin to Farenheit
+=LAMBDA(temp, (temp - 273.15) * 9/5 + 32)
