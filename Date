@@ -1,0 +1,3 @@
+#Get day of a date with an handling of the empty value
+=LAMBDA(date_case, IF(date_case<>"",TEXT(date_case,"dddd"),""))
+
