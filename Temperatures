@@ -1,0 +1,5 @@
+# Convert Celsius to Farenheit
+=LAMBDA(temp, temp * 9/5 + 32)
+
+# Convert Farenheit to Celsius
+=LAMBDA(temp, (5/9) * (temp-32))
