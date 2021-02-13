@@ -1,2 +1,8 @@
 #Count words in a sentences
 =LAMBDA(text, LEN(TRIM(text)) - LEN(SUBSTITUTE(TRIM(text), " ", "")) + 1)
+
+#Get last name
+=LAMBDA(name, RIGHT(name,LEN(name)-FIND("*",SUBSTITUTE(name," ","*",LEN(name)-LEN(SUBSTITUTE(name," ",""))))))
+
+#Get first name
+=LAMBDA(name, LEFT(name,FIND(" ",name)-1))
