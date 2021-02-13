@@ -1,0 +1,5 @@
+#Get work hours between dates and times (https://exceljet.net/formula/get-work-hours-between-dates-and-times)
+
+=LAMBDA(start, end, upper, lower, NETWORKDAYS(start,end)-1)*(upper-lower)
++IF(NETWORKDAYS(end,end),MEDIAN(MOD(end,1),upper,lower),upper)
+-MEDIAN(NETWORKDAYS(start,start)*MOD(start,1),upper,lower))
